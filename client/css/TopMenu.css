@@ -1,0 +1,26 @@
+.TopMenu{
+    display:flex;
+    justify-content: space-between;
+
+    height: 50px;
+}
+
+#navBarCollapse{
+    color: #c9c7c7;
+}
+
+#child1{
+
+}
+
+#child2{
+    font-family: 'Ink Free', sans-serif;
+    line-height: 50px;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+#child3{
+    
+}
