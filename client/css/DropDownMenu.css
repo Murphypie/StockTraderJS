@@ -1,7 +1,11 @@
-.dropdown{
+.dropDownWrapper{
     position:absolute;
     right:20px;
     top: 45px;
     z-index:1;
-    
+}
+
+.dropdown{
+    width: 100px;
+    text-align: left;
 }

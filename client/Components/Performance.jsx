@@ -1,10 +1,12 @@
 import React from 'react'
+import MainMenu from "../Containers/MainMenu"
 
 const Performace = () =>{
+    let menu = <h1> Performance page </h1>
     return(
-        <div>
-            <h1>Performance page</h1>
-        </div>
+    
+        <MainMenu menu = {menu}/>
+    
     )
 }
 

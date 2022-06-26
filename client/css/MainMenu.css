@@ -1,0 +1,32 @@
+.MainBody{
+    display:flex;
+    height: 100%;
+    flex-direction: column;
+}
+
+.TopMenu{
+    /* border-bottom: 3px solid #e5e5e5; */
+}
+
+.BottomMenu{
+    display:flex;
+    flex-direction: row;
+    padding-top: 0px;
+    padding-bottom:0px;
+    gap: 10px;
+    height:100%;
+    background-color: #fafafa;
+}
+
+.NavBar{
+    flex-basis:15%;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-top: 3px solid #e5e5e5; 
+    background-color: #ffffff;
+}
+.MainView{
+    flex-basis:85%;
+    border-top: 3px solid #e5e5e5; 
+    padding-left: 15px;
+}

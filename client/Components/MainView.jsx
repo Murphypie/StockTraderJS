@@ -1,11 +1,13 @@
 import React from "react";
 
-const MainView = () =>{
+import MainMenu from "../Containers/MainMenu"
 
+const MainView = () =>{
+    
+    let menu = <h1> Hello </h1>
+    // If you need to put more div, make sure to add class and add height 100%
     return(
-        <div>
-            <h1> Hello </h1>
-        </div>
+        <MainMenu menu = {menu}/>
     )
 }
 

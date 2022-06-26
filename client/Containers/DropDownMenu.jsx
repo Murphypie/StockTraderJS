@@ -1,6 +1,5 @@
 import React from "react";
-
-import Login from '../Components/Login'
+import {Link} from 'react-router-dom';
 
 import '../css/DropDownMenu.css'
 
@@ -8,9 +7,16 @@ import '../css/DropDownMenu.css'
 
 const DropDownMenu = () =>{
     return(
-        <button className = 'dropdown'>
-            <Login />
-        </button>
+        <div className = 'dropDownWrapper'>
+            <button className = 'dropdown'>
+                <Link to ='/login'>
+                    <button> Login </button>
+                </Link>
+                <Link to ='/help'>
+                    <button> Help </button>
+                </Link>
+            </button>
+        </div>
     )
 }
 

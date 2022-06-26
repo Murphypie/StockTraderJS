@@ -8,17 +8,17 @@ const PORT = process.env.PORT || 3000;
 
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
+app.use(express.static(path.join(__dirname, '../build')));
 
 app.use('/performance', performanceRouter)
 
-app.use(express.static(path.join(__dirname, '../build')));
 
 app.get('/', (req, res) => {
-    return res.status(200).sendFile(path.resolve(__dirname, '../client/index.html'));
+    return res.status(200).sendFile(path.resolve(__dirname, '../build/index.html'));
   });
 
 app.get('/*', (req, res) => {
-  return res.status(200).sendFile(path.resolve(__dirname, '../client/index.html'));
+  return res.status(200).sendFile(path.resolve(__dirname, '../build/index.html'));
 });
 
 function errorHandler(err, req, res, next) {
